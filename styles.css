@@ -84,3 +84,65 @@ img{max-width:100%;height:auto}
 @media (min-width:960px){
   .card,.creator-card,.testi{grid-column:span 4}
 }
+/* ----- Mobile improvements ----- */
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+
+  .hero { padding: 32px 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: 20px; }
+  .hero-copy h1 { font-size: 32px; line-height: 1.2; }
+  .hero-actions .btn { width: 100%; text-align: center; }
+
+  /* Filters: full-width controls */
+  .filters { flex-direction: column; align-items: stretch; gap: 12px; }
+  .filters select, .filters input { min-width: 0; width: 100%; }
+  .tag-chips { gap: 10px; }
+
+  /* Cards already drop to 1 column at <640px, keep tight spacing */
+  .card-body { padding: 12px; }
+  .card-title { font-size: 18px; }
+
+  /* Make testimonials breathe but stay compact */
+  .testi { padding: 14px; }
+
+  /* Header nav collapsible */
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    font-size: 20px;
+    margin-left: auto;
+  }
+
+  /* Start closed on mobile */
+  .nav { 
+    position: absolute;
+    top: 56px; /* below header */
+    right: 16px;
+    left: 16px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: var(--shadow);
+  }
+  .nav.open { display: flex; }
+
+  /* Desktop hides the toggle */
+}
+@media (min-width: 769px) {
+  .nav-toggle { display: none; }
+  .nav { display: flex; position: static; gap: 0; border: 0; padding: 0; box-shadow: none; }
+  .nav a { margin: 0 10px; }
+}
+
+/* Ensure images never overflow narrow screens */
+.hero-art img, .card-media img { width: 100%; height: auto; }
