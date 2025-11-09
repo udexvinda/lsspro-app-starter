@@ -1,5 +1,5 @@
 /* =========================================================
-   trizpro.app — main.js (vanilla, no frameworks)
+   lsspro.app — main.js (vanilla, no frameworks)
    - Mobile nav (collapsible)
    - Fast client-side filtering (debounced)
    - Accessible modal + focus handling
@@ -12,10 +12,10 @@ const DATA = {
   apps: [
     {
       id: "app-001",
-      title: "TRIZ GPT: Problem Statement Builder",
+      title: "LSS GPT: Problem Statement Builder",
       tagline: "Turn SWOT stickies into crisp, data-backed problem statements.",
       thumbnail: "/assets/apps/triz-gpt@2x.png",
-      category: "TRIZ",
+      category: "LSS",
       tags: ["SWOT", "Problem Statement", "Ideation"],
       creator_id: "c-azim",
       live_url: "https://gpt.trizpro.app",
@@ -147,7 +147,7 @@ const DATA = {
     },
     {
       quote:
-        "Our team finally sees TRIZ in action — not just on slides.",
+        "Our team finally sees LSS in action — not just on slides.",
       creator_id: "c-lina",
       app_id: "app-002",
       cohort: "VCW Jan 2025",
@@ -441,10 +441,10 @@ function renderSchema() {
   const site = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "trizpro.app",
-    url: "https://trizpro.app/",
+    name: "lsspro.app",
+    url: "https://lsspro.app/",
     description:
-      "Hub for TRIZ + AI mini apps by the Vibe Coding Workshop community",
+      "Hub for Lean Six Sigma + AI mini apps by the Vibe Coding Workshop community",
   };
   const itemList = {
     "@context": "https://schema.org",
