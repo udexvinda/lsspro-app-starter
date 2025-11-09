@@ -1,6 +1,6 @@
-# trizpro.app — Static Starter
+# lsspro.app — Static Starter
 
-A fast, accessible, **static** site (no frameworks) to showcase TRIZ + AI mini apps from the Vibe Coding community.
+A fast, accessible, **static** site (no frameworks) to showcase Lean Six Sigma + AI mini apps from the Vibe Coding community.
 
 ## Files
 - `index.html` — main page with sections (Hero, Showcase, Creators, Testimonials, Submit, About)
